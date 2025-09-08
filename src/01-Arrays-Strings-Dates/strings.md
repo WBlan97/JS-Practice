@@ -61,7 +61,7 @@ pbText
 Let's have fun and use the .replaceAll() method within this String/Wikipedia article:
 
 ```javascript
-pbText.replaceAll("", "")
+pbText.replaceAll("basketball", "egg")pbText.replaceAll("Basketball", "Egg")
 ```
 
 ## 3. Splitting strings
