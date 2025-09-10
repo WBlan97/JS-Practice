@@ -50,6 +50,7 @@ const paigeBueckersDoc = await wtf.fetch('Paige Bueckers')
 
 ```js
 const pbText = paigeBueckersDoc.plaintext()
+const pbText = FileAttachement("./../)
 ```
 
 ```js
@@ -69,13 +70,15 @@ pbText.replaceAll("basketball", "egg")pbText.replaceAll("Basketball", "Egg")
 How would we split this string into something that we can parse and loop through more methodically?
 
 ```javascript
-// Convert and code here
+pbText.split("")
 ```
+
+~~
 
 ## 4. Fun with loops, conditional statements, and `.includes()`
 
 Ok, let's start doing some easy counting of terms. There are more sophisticated and necessary steps to take to process/clean the data. But, I just want you to get an idea about what it's like to work with textual data.
 
 ```javascript
-// Convert and code here
+// Convert and code 
 ```
