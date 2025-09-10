@@ -11,12 +11,18 @@ Here's what you should understand by the end of the midterm. You should know ...
 ## Attach the dataset
 
 Use Observable's `FileAttachment()` to attach the `pb.txt` file with the `.text()` function.
-
+```js
+const pb = FileAttachment("./../data/pb.txt").text()
+```
 **QUESTIONS**: 
 
 1. What data type does your attached `pb.txt` file become?
+String
 2. How many characters are in the `pb.txt` file? HINT: Use the `.length` method.
 
+```js
+pb.length
+```
 ## Counting Matched Strings
 
 **Data to use**: `pb.txt`
@@ -26,6 +32,32 @@ Write a function that will:
 1. Split a large String by a single whitespace;
 2. Use an input String, e.g., `"basketball"`, to match against Strings in the split String; and
 3. Return the total amount of matches as Number.
+
+```js
+const splitAndCountString = (stringData, matchString) => {
+  let splitString = stringData.split(" ")
+  console.log(stringData)
+  for (const s of splitstring) {
+    if (s == matchString){
+      console.log(s)
+      count += 1
+    }
+  }
+}
+```
+
+```js
+const splitAndCountString = (stringData, matchString) => {
+  let splitString = stringData.split(" ")
+  console.log(stringData)
+  for (const s of splitstring) {
+    if (s == matchString){
+      console.log(s)
+      count += 1
+    }
+  }
+}
+```
 
 ## Set of Match Info
 
@@ -38,4 +70,12 @@ Iterate on the previous function by writing a new function that returns a single
     - EXAMPLE input of `"basketball"`:
       ```javascript
       [ "top basketball award", "womens basketball player", ... ]
+      
       ```
+
+```js
+return {
+  keyword; matchString
+  
+}
+```
