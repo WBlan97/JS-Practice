@@ -57,7 +57,12 @@ temperament: "solemn",
 ```
 
 ```js
-cuteArrayObject
+/**
+ * logNames
+**/
+const logNames = (collection) => {
+console.log(collection)
+}
 ```
 
 
@@ -127,8 +132,31 @@ Timmy["Hair"]
 **/
 ```
 
-```js
+```javascript
 let newKittyCollection = kittenCollection.map(
   
 )
 ```
+
+## Practice with Functions
+<!-- Write a new function  -->
+```js
+/**
+ * 1. File formats
+ * 2. PropName: String, used to access specific property in object.
+ **/
+
+const writeKittyProperties = (animalCollection, propName) => {
+let newCollection = []
+for (const animal of animalCollection){
+newCollection.push(animal[propName])
+}
+return newCollection
+}
+```
+
+```js
+let kittynames = writeKittyProperties(kittenCollection, "name")
+console.log(kittyNames)
+```
+
