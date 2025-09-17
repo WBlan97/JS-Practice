@@ -45,14 +45,20 @@ Hair: "Orange",
 eyeColor: "Blue",
 ageMonth: 3,
 temperament: "Angry",
-},
+}, 
+{
 Hair: "Brown",
 eyeColor: "Blue",
 ageMonth: 4,
 temperament: "solemn",
-]
+}]
 
 
+```
+
+```js
+cuteArrayObject
+```
 
 
 
