@@ -12,19 +12,53 @@ In small groups of 3-4 people, work through the following sections that ask you 
 
 ## 1. String
 
-Create a variable that is assigned a String that describes this image in 1-2 sentences.
+```js
+let descriptionCat = "Here are four cute kittens that are all different colors."
+```
 
 ## 2. Array
 
 Create a variable that is assigned to an Array that has 4 or more values to describe this image.
 
+```js
+let cuteArray = ["farLeft", "tabby", "headDown", "leaning"]
+```
+
 ## 3. Object
 
 Create a variable that is assigned 1 object with at least 4 key-value pairs.
+```js
+let Timmy = {
+Hair: "Orange",
+eyeColor: "Blue",
+ageMonth: 3,
+temperament: "Restful",
+}
+```
 
 ## 4. Array of Objects
 
-Create a variable that is assigned an Array with 4 objects that represent each kitten. Make sure that each kitten object shares the same keys.
+```js
+let cuteArrayObject = [
+{
+Hair: "Orange",
+eyeColor: "Blue",
+ageMonth: 3,
+temperament: "Angry",
+},
+Hair: "Brown",
+eyeColor: "Blue",
+ageMonth: 4,
+temperament: "solemn",
+]
+
+
+
+
+
+
+
+
 
 ## Helpful Transformative Methods in JS
 
@@ -32,28 +66,48 @@ We should remember a few useful methods, when working with the above types of da
 
 ### Strings
 
-```javascript
+```js
 /**
  * Strings:
  * concatenation, .charAt(), .slice(), .slice()
 **/
+
+```
+
+```js
+descriptionCat.slice(2,10)
+descriptionCat.split(".")
 ```
 ### Arrays
 
-```javascript
+```js
 /**
  * Arrays:
  * Using index position, .push(), for loops, .map()
 **/
-```
+cuteArray[0]
+cuteArray.push("TopRight")
+for (let Kitty in cuteArray){
+console.log(")
+}
 
+let newKittyArray = cuteArray.map(
+(kitty) => {
+  if(kitty == "farLeft"){
+  let newName = "cute" + kitty
+  return newName
+  }
+}
+)
+```
 ### Objects
 
-```javascript
+```js
 /**
  * Objects:
  * Accessing values with keys; Adding new properties (key-value pairs)
 **/
+Timmy["Hair"]
 ```
 
 ### Array of Objects
@@ -65,4 +119,10 @@ We should remember a few useful methods, when working with the above types of da
  * Adding new props;
  * Difference between .map() and for loops
 **/
+```
+
+```js
+let newKittyCollection = kittenCollection.map(
+  
+)
 ```
